@@ -1,0 +1,68 @@
+{
+  "model_name": "XGBoost (tuned)",
+  "train_rows": 2036,
+  "metrics": {
+    "r2": 0.620198130607605,
+    "r2_log": 0.8450579525682009,
+    "rmse_manwon": 991.9925969985865,
+    "mae_manwon": 461.04388427734375,
+    "mape_pct": 23.455721562532368
+  },
+  "thresholds": {
+    "DANGER_LOW": -25.732683367837815,
+    "WARNING_LOW": -15.282871511743778,
+    "WARNING_HIGH": 16.37149543388398,
+    "DANGER_HIGH": 33.97071903699269
+  },
+  "ref_year": 2026,
+  "ref_month": 5,
+  "cat_features": [
+    "brand",
+    "model",
+    "fuel"
+  ],
+  "num_features": [
+    "car_age_months",
+    "mileage",
+    "accident_cnt",
+    "total_accident_cost_log",
+    "owner_change_cnt",
+    "loan"
+  ],
+  "rare_fuel_categories": [
+    "수소",
+    "LPG+전기",
+    "가솔린+LPG"
+  ],
+  "keep_models": [
+    "카니발 4세대",
+    "더 뉴 그랜저 IG",
+    "쏘렌토 4세대",
+    "GV80",
+    "G80 (RG3)",
+    "팰리세이드",
+    "아반떼 (CN7)",
+    "그랜저 HG",
+    "K8",
+    "더 뉴 카니발 4세대",
+    "더 뉴 레이",
+    "올 뉴 카니발",
+    "그랜저 IG",
+    "GV70",
+    "그랜드 스타렉스",
+    "SM6",
+    "올 뉴 K7",
+    "G80",
+    "K5 3세대",
+    "더 뉴 싼타페",
+    "셀토스"
+  ],
+  "train_defaults": {
+    "mileage": 88410.0,
+    "fuel": "가솔린",
+    "accident_cnt": 0.0,
+    "total_accident_cost_log": 0.0,
+    "owner_change_cnt": 1.0,
+    "loan": 0.0
+  }
+}
